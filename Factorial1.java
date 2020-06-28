@@ -1,10 +1,13 @@
 import java.util.*;
 public class Factorial1 {
     public static void main(String[] args) {
-        int result=1;
+        int result = 1;
         System.out.println("Enter number : ");
-        Scanner sc= new Scanner(System.in);
-        int input = sc. nextInt();
+        Scanner sc = new Scanner(System.in);
+
+        float input1 = sc.nextFloat();
+        int input=Math.round(input1);
+        if (input >= 0) {
         
        while (input!=0)
         {
@@ -14,5 +17,8 @@ public class Factorial1 {
             input--;
         }
         System.out.println("\nFactorial is "+result);
+            }else {
+            System.out.println("Enter Positive Value \n ");
+        }
     }
 }
